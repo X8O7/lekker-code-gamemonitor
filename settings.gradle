@@ -1,0 +1,11 @@
+rootProject.name = 'gamemonitor'
+include 'api'
+include 'backend'
+include 'frontend'
+
+project(':api').projectDir = file('api/')
+project(':api').buildFileName = 'build.gradle'
+project(':backend').projectDir = file('backend/')
+project(':backend').buildFileName = 'build.gradle'
+project(':frontend').projectDir = file('frontend/')
+project(':frontend').buildFileName = 'build.gradle'
